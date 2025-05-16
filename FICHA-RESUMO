@@ -1,0 +1,31 @@
+REST-CRUD
+
+
+Este projeto tem várias similaridades com o CRUD no sentido que o código é uma API com funções para CRIAR, LER, ATUALIZAR e DELETAR.
+
+
+
+Porém, este projeto obedece ao padrão REST pois ele é STATELESS,
+cada operação é tratada independentemente, já o CRUD é STATEFUL,
+ele precisa de uma ferramenta para administrar seu estado pois 
+ele depende do estado atual do registro do banco de dados
+para fazer atualizações.
+
+
+
+Este projeto trata cada operação como sua propia querry, suas funções são:
+
+- POST para fazer uma nova linha no banco de dados.
+
+- GET para conseguir os dados do elemento relevante especificado na URL.
+
+- DEL para deletar uma linha no banco de dados.
+
+- PUT para atualizar os dados de uma certa linha.
+
+
+
+Ele trata justamente de produto e cliente. Sendo que, diferente de, produto,
+cliente tem dois tipos de endpoint para fazer as operações relevantes,
+o de ID padrão (/cliente/id) e o de CPF (/cliente/padrão),
+já o produto só tem o de ID (/produto/id).
